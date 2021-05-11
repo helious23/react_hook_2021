@@ -9,7 +9,7 @@
 - [x] useHover
 - [x] useConfirm
 - [x] usePreventLeave
-- [ ] usePageLeave
+- [x] useBeforeLeave
 - [x] useFadeIn
 - [ ] useNetwork
 - [ ] useFullscreen

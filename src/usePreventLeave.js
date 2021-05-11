@@ -6,9 +6,9 @@ import React from "react";
 const usePreventLeave = () => {
   const listener = (e) => {
     e.preventDefault();
-    e.returnValue = "";
+    e.returnValue = ""; // chrome 에서는 있어야 beforeunload 정상 작동
   };
-  const enablePrevent = () => window.addEventListener("beforeunload", listener);
+  const enablePrevent = () => window.addEventListener("beforeunload", listener); // browser 창이 꺼지거나 새로고침 하기 전에 event 실행
   const disablePrevent = () =>
     window.removeEventListener("beforeunload", listener);
   return { enablePrevent, disablePrevent };

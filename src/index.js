@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./usePreventLeave";
+import App from "./useBeforeLeave";
 
 ReactDOM.render(
   <React.StrictMode>
