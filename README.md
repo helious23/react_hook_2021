@@ -2,17 +2,17 @@
 
 ### useState
 
-- [ ] useInput
+- [x] useInput with validator
 - [x] useTabs
 - [x] useTitle
 - [x] useClick
+- [x] useHover
+- [ ] useConrifm
+- [ ] usePreventLeave
 - [ ] usePageLeave
-- [ ] useFadeIn
-- [ ] useFullscreen
-- [ ] useHover
+- [x] useFadeIn
 - [ ] useNetwork
+- [ ] useFullscreen
 - [ ] useNotification
 - [ ] useScroll
-- [ ] usePreventLeave
-- [ ] useConrifm
 - [ ] useAxios
