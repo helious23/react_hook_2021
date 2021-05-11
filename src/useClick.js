@@ -1,20 +1,23 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useRef } from "react";
 
 const useClick = (onClick) => {
-  // if (typeof onClick !== "function") {
-  //   return;
-  // }
-  const element = useRef();
+  if (typeof onClick !== "function") {
+    return;
+  }
+  const element = useRef(); // title 태그 가져옴
   useEffect(() => {
-    if (element.current) {
-      element.current.addEventListener("click", onClick);
+    const title = element.current;
+    if (title) {
+      title.addEventListener("click", onClick);
     }
     return () => {
-      if (element.current) {
-        element.current.removeEventListener("click", onClick);
+      // useEffect 에서 return 하는 함수는 componentWillUnMount 일 때 실행됨
+      if (title) {
+        title.removeEventListener("click", onClick);
       }
     };
-  }, []);
+  }, []); // dependency 가 없으므로 componentDidUnmount 에 실행 되지 않음
   return element;
 };
 
