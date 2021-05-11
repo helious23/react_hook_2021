@@ -7,8 +7,8 @@
 - [x] useTitle
 - [x] useClick
 - [x] useHover
-- [ ] useConfirm
-- [ ] usePreventLeave
+- [x] useConfirm
+- [x] usePreventLeave
 - [ ] usePageLeave
 - [x] useFadeIn
 - [ ] useNetwork
