@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 
 const content = [
@@ -11,13 +12,13 @@ const content = [
   },
 ];
 
-const useTabs = (initialTab, allTabs) => {
-  // if (!allTabs || !Array.isArray(allTabs)) {
-  //   return;
-  // }
+const useTabs = (initialTab, content) => {
+  if (!content || !Array.isArray(content)) {
+    return;
+  }
   const [currentIndex, setCurrentIndex] = useState(initialTab);
   return {
-    currentItem: allTabs[currentIndex],
+    currentItem: content[currentIndex],
     changeItem: setCurrentIndex,
   };
 };
