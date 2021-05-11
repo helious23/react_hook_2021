@@ -7,14 +7,14 @@ const useClick = (onClick) => {
   }
   const element = useRef(); // title 태그 가져옴
   useEffect(() => {
-    const title = element.current;
-    if (title) {
-      title.addEventListener("click", onClick);
+    const { current } = element;
+    if (current) {
+      current.addEventListener("click", onClick);
     }
     return () => {
       // useEffect 에서 return 하는 함수는 componentWillUnMount 일 때 실행됨
-      if (title) {
-        title.removeEventListener("click", onClick);
+      if (current) {
+        current.removeEventListener("click", onClick);
       }
     };
   }, []); // dependency 가 없으므로 componentDidUnmount 에 실행 되지 않음

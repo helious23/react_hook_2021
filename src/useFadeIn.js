@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useRef } from "react";
 
 const useFadeIn = (duration = 1, delay = 0) => {
