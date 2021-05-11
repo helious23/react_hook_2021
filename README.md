@@ -7,7 +7,7 @@
 - [x] useTitle
 - [x] useClick
 - [x] useHover
-- [ ] useConrifm
+- [ ] useConfirm
 - [ ] usePreventLeave
 - [ ] usePageLeave
 - [x] useFadeIn
